@@ -13,6 +13,8 @@
 		52054DA72A77AF47007F976B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52054DA52A77AF47007F976B /* Main.storyboard */; };
 		52054DA92A77AF48007F976B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52054DA82A77AF48007F976B /* Assets.xcassets */; };
 		52054DAC2A77AF48007F976B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52054DAA2A77AF48007F976B /* LaunchScreen.storyboard */; };
+		52054DB52A77AFA5007F976B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52054DB42A77AFA5007F976B /* SnapKit */; };
+		52054DB72A77CADB007F976B /* a1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52054DB62A77CADB007F976B /* a1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		52054DA82A77AF48007F976B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52054DAB2A77AF48007F976B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52054DAD2A77AF48007F976B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52054DB62A77CADB007F976B /* a1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52054DB52A77AFA5007F976B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				52054DA82A77AF48007F976B /* Assets.xcassets */,
 				52054DAA2A77AF48007F976B /* LaunchScreen.storyboard */,
 				52054DAD2A77AF48007F976B /* Info.plist */,
+				52054DB62A77CADB007F976B /* a1.mp3 */,
 			);
 			path = ButtonsNeonAcademy;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = ButtonsNeonAcademy;
+			packageProductDependencies = (
+				52054DB42A77AFA5007F976B /* SnapKit */,
+			);
 			productName = ButtonsNeonAcademy;
 			productReference = 52054D9C2A77AF47007F976B /* ButtonsNeonAcademy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 52054D932A77AF47007F976B;
+			packageReferences = (
+				52054DB32A77AFA5007F976B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 52054D9D2A77AF47007F976B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52054DB72A77CADB007F976B /* a1.mp3 in Resources */,
 				52054DAC2A77AF48007F976B /* LaunchScreen.storyboard in Resources */,
 				52054DA92A77AF48007F976B /* Assets.xcassets in Resources */,
 				52054DA72A77AF47007F976B /* Main.storyboard in Resources */,
@@ -356,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52054DB32A77AFA5007F976B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52054DB42A77AFA5007F976B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52054DB32A77AFA5007F976B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52054D942A77AF47007F976B /* Project object */;
 }
